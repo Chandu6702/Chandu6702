@@ -1,4 +1,4 @@
-👋 Hi, I’m @Chandu
+👋 Hi, I’m @Chandu6702
 
 👀 I’m interested in Machine Learning, Deep Learning, FullStack Web-Development.
 
