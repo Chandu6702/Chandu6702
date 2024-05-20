@@ -69,14 +69,14 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DonaldReddy&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=nightowl&locale=en&hide_border=true&order=1" height="200" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=DonaldReddy&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=nightowl&hide_border=true&order=2" height="200" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=Chandu6702&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=nightowl&locale=en&hide_border=true&order=1" height="200" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Chandu6702&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=nightowl&hide_border=true&order=2" height="200" alt="languages graph"  />
 
   ###
-  <img src="https://github-profile-trophy.vercel.app?username=DonaldReddy&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=Chandu6702&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
 
   ###
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DonaldReddy&radius=16&theme=nightowl&area=true&order=5" height="300" alt="activity-graph graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Chandu6702&radius=16&theme=nightowl&area=true&order=5" height="300" alt="activity-graph graph"  />
 
 </div>
 
@@ -85,12 +85,12 @@
 
 ###
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DonaldReddy/DonaldReddy/output/snake.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/Chandu6702/Chandu6702/output/snake.svg" alt="Snake animation" />
 </div>
 
 ###
 <div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=DonaldReddy.DonaldReddy&left_color=darkblue&right_color=black&left_text=Profile%20Visits%20"  />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Chandu6702.Chandu6702y&left_color=darkblue&right_color=black&left_text=Profile%20Visits%20"  />
 </div>
 
 ###
