@@ -90,7 +90,7 @@
 
 ###
 <div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Chandu6702.Chandu6702y&left_color=darkblue&right_color=black&left_text=Profile%20Visits%20"  />
+  <img src="https://profile-counter.glitch.me/Chandu6702/count.svg?"  />
 </div>
 
 ###
