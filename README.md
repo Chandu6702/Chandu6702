@@ -6,6 +6,7 @@
     <br>👀 I’m interested in Machine Learning, Deep Learning, and FullStack web development.<br>🔭 I’m currently working on the MERN stack, and Open Source.
   </h2>
 </div>
+[![An image of @chandu6702's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/chandu6702)](https://holopin.io/@chandu6702)
 
 ###
 
