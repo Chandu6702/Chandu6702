@@ -11,7 +11,7 @@
 
 ###
 
-<br clear="both">
+<!--<br clear="both">-->
 
 <!--## GSSOC(24) Badges-->
 <!--<div style='display:flex; align-items:center; gap: 10px;' align='center'>-->
@@ -28,7 +28,7 @@
 
 ###
 
-<br clear="both">
+<!--<br clear="both">-->
 
 <div align="center">
   <h2 align="left">Languages</h2>
