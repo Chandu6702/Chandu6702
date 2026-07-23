@@ -1,7 +1,7 @@
-name: Generate snake animation
+name: Generate profile assets
 
 on:
-  schedule: # execute every 12 hours
+  schedule: # twice a day
     - cron: "0 */12 * * *"
 
   workflow_dispatch:
@@ -18,14 +18,20 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg?palette=github-dark
 
+      - name: generate stats.svg
+        run: node scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push snake.svg to the output branch
+      - name: push generated assets to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
