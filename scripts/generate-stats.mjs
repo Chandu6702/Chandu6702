@@ -46,6 +46,40 @@ const user = payload.data.user;
 const stars = user.repositories.nodes.reduce((sum, repo) => sum + repo.stargazerCount, 0);
 const contributions = user.contributionsCollection.contributionCalendar.totalContributions;
 
+// Self-owned visitor counter: the traffic API only keeps 14 days, so a
+// running total (deduped by day) is persisted as visits.json on the same
+// output branch the card ships from. Today is skipped — it's still counting.
+let visits = null;
+try {
+  const trafficRes = await fetch(
+    `https://api.github.com/repos/${USER}/${USER}/traffic/views?per=day`,
+    { headers: { Authorization: `bearer ${token}` } },
+  );
+  if (trafficRes.ok) {
+    const traffic = await trafficRes.json();
+    let state = { total: 0, lastDate: '' };
+    const prev = await fetch(
+      `https://raw.githubusercontent.com/${USER}/${USER}/output/visits.json`,
+    );
+    if (prev.ok) {
+      state = await prev.json();
+    }
+    const today = new Date().toISOString().slice(0, 10);
+    for (const day of traffic.views ?? []) {
+      const date = day.timestamp.slice(0, 10);
+      if (date > state.lastDate && date < today) {
+        state.total += day.count;
+        state.lastDate = date;
+      }
+    }
+    visits = state.total;
+    await mkdir('dist', { recursive: true });
+    await writeFile('dist/visits.json', JSON.stringify(state));
+  }
+} catch (e) {
+  console.error('traffic lookup failed (non-fatal):', e.message);
+}
+
 // Aggregate language bytes across repositories, keep the top five.
 const langBytes = new Map();
 for (const repo of user.repositories.nodes) {
@@ -121,7 +155,9 @@ const svg = `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http
     <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="12" fill="#0f172a" stroke="#1e293b" />
     <polyline class="pulse" points="30,32 44,32 50,20 58,42 64,26 68,32 82,32" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     <text x="94" y="38" class="title">${USER} on GitHub</text>
-    <text x="748" y="38" text-anchor="end" class="label">updated ${new Date().toISOString().slice(0, 10)}</text>
+    <text x="748" y="38" text-anchor="end" class="label">${
+      visits !== null ? `${visits.toLocaleString('en')} profile visits · ` : ''
+    }updated ${new Date().toISOString().slice(0, 10)}</text>
     ${statRows}
     <text x="${BAR_X}" y="58" class="subtitle">Most-written languages</text>
     ${segments}
