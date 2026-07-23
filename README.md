@@ -2,7 +2,7 @@
 
 # Uma Chandra Sekhara Sarma Thadepalli
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=800&color=36BCF7&center=true&vCenter=true&width=520&lines=Full-stack+developer;React+%C2%B7+TypeScript+%C2%B7+Node.js+%C2%B7+Java+%C2%B7+Spring;Building+systems+that+survive+concurrent+users" alt="Full-stack developer — React · TypeScript · Node.js · Java · Spring" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=800&color=36BCF7&center=true&vCenter=true&width=760&lines=Full-stack+developer;React+%C2%B7+TypeScript+%C2%B7+Node.js+%C2%B7+Java+%C2%B7+Spring;Building+systems+that+survive+concurrent+users" alt="Full-stack developer — React · TypeScript · Node.js · Java · Spring" />
 
 <br/>
 
@@ -16,14 +16,6 @@ I build web applications end to end and care most about the engineering nobody
 sees — consistent data, auth that holds up, code the next person can actually
 read. And yes, system design and AI — there's no escaping them in this era.
 
-## 🚀 Featured work
-
-| Project | The problem it solves | Built with |
-|---|---|---|
-| [**eventpulse-v2**](https://github.com/Chandu6702/eventpulse-v2) | Selling the last 10 tickets to 500 concurrent buyers without overselling — plus idempotent checkout, rotating refresh tokens, QR gate check-in, and sales analytics with optional AI insights | Java 21 · Spring Boot 4 · PostgreSQL · React |
-| [**runready**](https://github.com/Chandu6702/runready) | You clone a repo, run it, and get `ECONNREFUSED`. This CLI reads the actual source and tells you what a project needs before you run it — including credentials git is about to leak | TypeScript · Node.js |
-| [**portfolio**](https://github.com/Chandu6702/Uma_Chandra_Sekhara_Portfolio) | This profile, in website form | React · Tailwind CSS |
-
 ## 🛠️ Stack
 
 <div align="center">
@@ -32,15 +24,22 @@ read. And yes, system design and AI — there's no escaping them in this era.
 
 ## 🌱 Open source
 
-Contributor with **GirlScript Summer of Code** — [Holopin badges](https://holopin.io/@chandu6702)
+Contributor with **GirlScript Summer of Code**
 
 <div align="center">
+  <a href="https://holopin.io/@chandu6702">
+    <img src="https://holopin.me/chandu6702" alt="Holopin badges" width="760" />
+  </a>
   <img src="GSSoC%20Achievements.png" alt="GSSoC achievement badges" width="720" />
 </div>
 
 ## 📈 GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Chandu6702&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true" height="165" alt="GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=Chandu6702&theme=tokyonight&hide_border=true" height="165" alt="Contribution streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Chandu6702&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&locale=en&hide_border=true" height="170" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Chandu6702&locale=en&layout=compact&card_width=320&langs_count=6&theme=tokyonight&hide_border=true" height="170" alt="Top languages" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Chandu6702/Chandu6702/output/snake.svg" alt="Contribution snake animation" />
 </div>
