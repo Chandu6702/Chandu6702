@@ -30,6 +30,9 @@ jobs:
         run: node scripts/generate-stats.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional PAT for the traffic API (visit counting) — the built-in
+          # token cannot read traffic. See README of scripts/.
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
 
       - name: push generated assets to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

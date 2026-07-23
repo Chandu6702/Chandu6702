@@ -49,12 +49,17 @@ const contributions = user.contributionsCollection.contributionCalendar.totalCon
 // Self-owned visitor counter: the traffic API only keeps 14 days, so a
 // running total (deduped by day) is persisted as visits.json on the same
 // output branch the card ships from. Today is skipped — it's still counting.
+// The Actions GITHUB_TOKEN cannot read traffic — that needs a PAT, provided
+// as the TRAFFIC_TOKEN secret. Without one the card just omits the count.
 let visits = null;
 try {
   const trafficRes = await fetch(
     `https://api.github.com/repos/${USER}/${USER}/traffic/views?per=day`,
-    { headers: { Authorization: `bearer ${token}` } },
+    { headers: { Authorization: `bearer ${process.env.TRAFFIC_TOKEN || token}` } },
   );
+  if (!trafficRes.ok) {
+    console.error(`traffic lookup skipped: HTTP ${trafficRes.status} (set the TRAFFIC_TOKEN secret to enable visit counting)`);
+  }
   if (trafficRes.ok) {
     const traffic = await trafficRes.json();
     let state = { total: 0, lastDate: '' };
