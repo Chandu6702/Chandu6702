@@ -3,7 +3,7 @@
 // repo's GITHUB_TOKEN; locally: GITHUB_TOKEN=$(gh auth token) node scripts/generate-stats.mjs
 import { mkdir, writeFile } from 'node:fs/promises';
 
-const USER = 'Chandu6702';
+const USER = 'Me';
 const token = process.env.GITHUB_TOKEN;
 if (!token) {
   console.error('GITHUB_TOKEN is required');
