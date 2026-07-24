@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Uma Chandra Sekhara Sarma Thadepalli — full-stack developer" width="800" />
+<img src="assets/banner.svg?v=2" alt="Uma Chandra Sekhara Sarma Thadepalli — full-stack developer" width="800" />
 
 <a href="https://uma-chandra-sekhara-sarma-portfolio.onrender.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0ea5e9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 &nbsp;
